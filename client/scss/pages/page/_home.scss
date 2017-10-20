@@ -83,7 +83,7 @@ $nav-size: 250px !default;
 	}
 
 
-	//// Section - cta-banner
+	//// Section - CTA-Banner
 	section.cta-banner {
 		background: $color-secondary;
 		font-weight: bold;
@@ -95,16 +95,9 @@ $nav-size: 250px !default;
 			font-weight: bold;
 			text-align: center;
 		}
-
-		// button {
-		// 	background: $color-primary;
-		// 	border: solid 1px $color-primary;
-		// 	border-radius: 5px;
-		// 	text-align: left;
-		// }
 	}
 
-	//// Section - services 
+	//// Section - Services 
 	section.services {
 		img {
 			display: block;
@@ -208,9 +201,5 @@ $nav-size: 250px !default;
 			}
 		}
 
-	}
-
-	@media (min-width: 768px) {
-		
 	}
 }

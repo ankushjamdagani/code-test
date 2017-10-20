@@ -12,7 +12,7 @@ $(function(){
         $(this).parent('label').siblings('span').html(filename);
     });
 
-    // Navigation Toggle
+    // Mobile Navigation Toggle
     $('.nav-toggle').click(function () {
     	$('#home').toggleClass('nav-open');
     })
