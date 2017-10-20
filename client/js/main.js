@@ -11,4 +11,9 @@ $(function(){
         var filename = m[1];
         $(this).parent('label').siblings('span').html(filename);
     });
+
+    // Navigation Toggle
+    $('.nav-toggle').click(function () {
+    	$('.home').toggleClass('nav-open');
+    })
 });

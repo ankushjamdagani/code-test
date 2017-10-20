@@ -1,22 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 47 (45396) - http://www.bohemiancoding.com/sketch -->
-    <title>icon/solid/menu</title>
-    <desc>Created with sketchtool.</desc>
-    <defs>
-        <path d="M5,9 L27,9 L27,11 L5,11 L5,9 Z M5,15 L27,15 L27,17 L5,17 L5,15 Z M5,21 L27,21 L27,23 L5,23 L5,21 Z" id="path-1"></path>
-    </defs>
-    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="icon/solid/menu">
-            <mask id="mask-2" fill="white">
-                <use xlink:href="#path-1"></use>
-            </mask>
-            <use id="menu" fill="#000000" xlink:href="#path-1"></use>
-            <g id="color/solid/primary" mask="url(#mask-2)" fill="#4A90E2">
-                <g transform="translate(-22.000000, -25.000000)" id="color">
-                    <rect x="0" y="0" width="80" height="80"></rect>
-                </g>
-            </g>
-        </g>
-    </g>
+<svg width="64" height="64" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>menu</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="matrix(2 0 0 2 -968 566)">
+<g id="icon/solid/menu">
+<g id="menu">
+<use xlink:href="#path0_fill" transform="translate(489 -274)"/>
+</g>
+<mask id="mask0_outline" mask-type="alpha">
+<g id="menu">
+<use xlink:href="#path0_fill" transform="translate(489 -274)" fill="#FFFFFF"/>
+</g>
+</mask>
+<g id="Color/Solid/Primary" mask="url(#mask0_outline)">
+<g id="color">
+<use xlink:href="#path1_fill" transform="translate(462 -308)" fill="#0E3757"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0 0L 22 0L 22 2L 0 2L 0 0ZM 0 6L 22 6L 22 8L 0 8L 0 6ZM 22 12L 0 12L 0 14L 22 14L 22 12Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 0 0L 80 0L 80 80L 0 80L 0 0Z"/>
+</defs>
 </svg>
