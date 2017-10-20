@@ -3,19 +3,24 @@
 /////////////////////////////////////////////////////////
 
 // Overides for home page here
-$color-primary: #133359;
+
+//// Variables
+$primary: #FF506C;
+$secondary: #133359;
 $nav-size: 280px;
 
+//// Page - Home
 .home {
-	color: $color-primary;
+	color: $secondary;
 	overflow: hidden;
 	position: relative;
 	right: 0;
 	@include transition(right .5s)
 
+	//// Section - Header
 	header {
 		.nav-item  {
-			color: $color-primary;
+			color: $secondary;
 			margin: 0 .5em;
 			padding: .25em;
 		}
@@ -23,7 +28,7 @@ $nav-size: 280px;
 		.nav-button {
 			border-radius: 5px;
 			color: white;
-			background: $color-primary;
+			background: $secondary;
 			padding: .75em 2em;
 		}
 
@@ -50,6 +55,22 @@ $nav-size: 280px;
 		}
 	}
 
+	//// Section - Footer
+	footer {
+		background: $secondary;
+		color: white;
+		text-align: center;
+
+		em {
+			color: $primary;
+		}
+
+		.logo-footer {
+			background-image: url(/img/brand/logo/secondary.svg);
+		}
+	}
+
+	//// Media Queries
 	@media (max-width: 768px) {
 		
 		&.nav-open {
@@ -80,7 +101,7 @@ $nav-size: 280px;
 			}
 
 			.nav-content {
-				background: $color-primary;
+				background: $secondary;
 				overflow: auto;
 				padding: 2em 1em;
 				position: fixed;
@@ -92,6 +113,5 @@ $nav-size: 280px;
 				@include transition(right .5s)
 			}
 		}
-
 	}
 }
