@@ -18,6 +18,21 @@ $nav-size: 280px !default;
 	right: 0;
 	@include transition(right .5s)
 
+
+	em {
+		color: $color-secondary;
+	}
+	
+	.title, .description {
+		color: $color-primary;
+		text-align: center;
+	}
+
+	.description {
+		font-weight: normal;
+		color: $color-grey;
+	}
+
 	//// Section - Header
 	header {
 		.nav-item  {
@@ -57,19 +72,8 @@ $nav-size: 280px !default;
 	}
 
 
-	////Section - Cover
+	//// Section - Cover
 	section.cover {
-		text-align: center;
-		
-		.title, .description {
-			color: $color-primary;
-		}
-
-		.description {
-			font-weight: normal;
-			color: $color-grey;
-		}
-
 		img {
 			width: 100%;
 			margin-bottom: -.5em;
@@ -77,7 +81,7 @@ $nav-size: 280px !default;
 	}
 
 
-	////Section - cta-banner
+	//// Section - cta-banner
 	section.cta-banner {
 		background: $color-secondary;
 		color: white;
@@ -98,15 +102,25 @@ $nav-size: 280px !default;
 		}
 	}
 
+	//// Section - services 
+	section.services {
+		img {
+			display: block;
+			margin: 1em auto;
+			width: 60%;
+		}
+
+		.card {
+			margin-bottom: 2em;
+			max-width: 250px;
+		}
+	}
+
 	//// Section - Footer
 	footer {
 		background: $color-primary;
 		color: white;
 		text-align: center;
-
-		em {
-			color: $color-secondary;
-		}
 
 		.logo-footer {
 			background-image: url(/img/brand/logo/secondary.svg);
