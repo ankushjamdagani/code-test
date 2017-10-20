@@ -5,13 +5,14 @@
 // Overides for home page here
 
 //// Variables
-$primary: #FF506C;
-$secondary: #133359;
-$nav-size: 280px;
+$color-primary: #0e3657 !default;
+$color-secondary: #f56975 !default;
+$color-grey: #8d9ca8 !default;
+$color-light-grey: #eee !default;
+$nav-size: 280px !default;
 
 //// Page - Home
-.home {
-	color: $secondary;
+#home {
 	overflow: hidden;
 	position: relative;
 	right: 0;
@@ -20,7 +21,7 @@ $nav-size: 280px;
 	//// Section - Header
 	header {
 		.nav-item  {
-			color: $secondary;
+			color: $color-primary;
 			margin: 0 .5em;
 			padding: .25em;
 		}
@@ -28,7 +29,7 @@ $nav-size: 280px;
 		.nav-button {
 			border-radius: 5px;
 			color: white;
-			background: $secondary;
+			background: $color-primary;
 			padding: .75em 2em;
 		}
 
@@ -55,14 +56,56 @@ $nav-size: 280px;
 		}
 	}
 
+
+	////Section - Cover
+	section.cover {
+		text-align: center;
+		
+		.title, .description {
+			color: $color-primary;
+		}
+
+		.description {
+			font-weight: normal;
+			color: $color-grey;
+		}
+
+		img {
+			width: 100%;
+			margin-bottom: -.5em;
+		}
+	}
+
+
+	////Section - cta-banner
+	section.cta-banner {
+		background: $color-secondary;
+		color: white;
+		font-weight: bold;
+		position: relative;
+		z-index: 1;
+
+		div {
+			font-weight: bold;
+			text-align: center;
+		}
+
+		button {
+			background: $color-primary;
+			border: solid 1px $color-primary;
+			border-radius: 5px;
+			text-align: left;
+		}
+	}
+
 	//// Section - Footer
 	footer {
-		background: $secondary;
+		background: $color-primary;
 		color: white;
 		text-align: center;
 
 		em {
-			color: $primary;
+			color: $color-secondary;
 		}
 
 		.logo-footer {
@@ -101,7 +144,7 @@ $nav-size: 280px;
 			}
 
 			.nav-content {
-				background: $secondary;
+				background: $color-primary;
 				overflow: auto;
 				padding: 2em 1em;
 				position: fixed;
@@ -112,6 +155,14 @@ $nav-size: 280px;
 				z-index: 111;
 				@include transition(right .5s)
 			}
+		}
+
+	}
+
+	@media (min-width: 768px) {
+		
+		section.cta-banner {
+			// text-align: left;
 		}
 	}
 }
