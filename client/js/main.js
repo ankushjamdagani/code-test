@@ -14,6 +14,6 @@ $(function(){
 
     // Navigation Toggle
     $('.nav-toggle').click(function () {
-    	$('.home').toggleClass('nav-open');
+    	$('#home').toggleClass('nav-open');
     })
 });
